@@ -13,10 +13,15 @@ public class Start {
 		try {
 			
 			StartView sv = new StartView(cinesa);
-			sv.go();
+			sv.go();			
 		}
 		catch(Exception e) {e.printStackTrace();}
 		
 	}
 
 }
+/*private int idCine;
+private String nombre;
+private String responsable;
+private String telefono;
+private String direccion;*/

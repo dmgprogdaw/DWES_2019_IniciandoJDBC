@@ -1,7 +1,5 @@
 package negocio.beans;
 
-import java.util.ArrayList;
-
 public class CineBean {
 
 	private int idCine;
