@@ -12,14 +12,15 @@ public class CinesDelete {
 	public void deleteCine(CineBean cine) {
 		
 		Connection conexion = BDConect.getConexion();
-		PreparedStatement pst = null;
+		PreparedStatement stmt = null;
 
 		String sql = "DELETE from cines " +	
 					 "WHERE idcines=" +cine.getIdCine();
 		
+		System.out.println(sql);
 		try {
-			pst = conexion.prepareStatement(sql);
-			pst.execute(sql);
+			stmt = conexion.prepareStatement(sql);
+//			stmt.execute();
 		}
 		catch(SQLException e) {
 			e.printStackTrace();

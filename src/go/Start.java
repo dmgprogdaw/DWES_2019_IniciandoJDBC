@@ -6,7 +6,7 @@ import view.StartView;
 public class Start {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 		Cinesa cinesa = new Cinesa();
 		
@@ -20,8 +20,3 @@ public class Start {
 	}
 
 }
-/*private int idCine;
-private String nombre;
-private String responsable;
-private String telefono;
-private String direccion;*/

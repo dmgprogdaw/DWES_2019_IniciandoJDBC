@@ -108,7 +108,7 @@ public class StartView {
 	
 	
 	/**
-	 * Crea un cine
+	 * Inserta un cine
 	 * PRIVADO
 	 * @throws IOException 
 	 */
@@ -119,14 +119,6 @@ public class StartView {
 						
 		// recojo el cine se lo paso a la parte de la view que lo inserta
 		CrearCineView.crearCine(cineNew);
-		
-//		cineNew.setNombre("Yelmo Cines");
-//		cineNew.setResponsable("Alguien");
-//		cineNew.setTelefono("123456789");
-//		cineNew.setDireccion("Oviedo");
-//		
-//		CinesCreate createNew = new CinesCreate();
-//		createNew.createCine(cineNew);
 	}
 	
 	private void borrarCine() throws NumberFormatException, IOException  {

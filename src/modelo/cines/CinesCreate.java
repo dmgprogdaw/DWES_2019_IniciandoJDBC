@@ -12,7 +12,7 @@ public class CinesCreate {
 	public void createCine(CineBean cine) {
 		
 		Connection conexion = BDConect.getConexion();
-		PreparedStatement pst = null;
+		PreparedStatement stmt = null;
 
 		String sql = "INSERT INTO cines(nombre, responsable, telefono, direccion)" +	
 					 "VALUES (" +
@@ -22,8 +22,8 @@ public class CinesCreate {
 				     "'" + cine.getDireccion() +"')";
 		
 		try {
-			pst = conexion.prepareStatement(sql);
-			pst.execute();
+			stmt = conexion.prepareStatement(sql);
+			stmt.execute();
 		}
 		catch(SQLException e) {
 			e.printStackTrace();
